@@ -1,4 +1,4 @@
-import * as faker from 'faker';
+import faker from '@faker-js/faker';
 import * as moment from 'moment';
 
 export function getRandomInt(min: number, max: number) {
@@ -103,6 +103,7 @@ const fakeFunctions = {
   currencyName: () => faker.finance.currencyName(),
   currencySymbol: () => faker.finance.currencySymbol(),
   bitcoinAddress: () => faker.finance.bitcoinAddress(),
+  // @ts-ignore
   internationalBankAccountNumber: () => faker.finance.iban(),
   bankIdentifierCode: () => faker.finance.bic(),
 
@@ -186,6 +187,7 @@ const fakeFunctions = {
   // System section
   // Skipped: faker.system.fileName
   // TODO: Add ext
+  // @ts-ignore
   filename: () => faker.system.commonFileName(),
   mimeType: () => faker.system.mimeType(),
   // Skipped: faker.system.fileType
